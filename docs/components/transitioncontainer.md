@@ -17,7 +17,7 @@ The `TransitionContainer` is a fixed height component, content that exceeds the 
 
 ## Usage
 
-```text
+```jsx
 <TransitionContainer transition='left'>
   <TransitionContent transitionKey={'uniqueValueForCurrentContent'}>
     {this.state.currentContent}
