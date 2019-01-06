@@ -1,14 +1,12 @@
 # theme
 
-_**NOTE** These docs are out of date and will be updated before Site Evo launch_
+## JS: utils/theme
 
-## JS: utils/theme \[DEPRECATED\]
+{% hint style="warning" %}
+These JavaScript utils are deprecated and will be phased out. If you need theme data, use styled-components or `connect` your Component to redux.
 
-_These JavaScript utils are deprecated and will be phased out. If you need theme data, use styled-components or_ `connect` _your Component to redux._
-
-_**Why deprecate these?**_
-
-_By using one of these methods in a Component render method, you are declaring that the Component depends on theme data but are not passing that data as props. Therefore, if the theme changes, the Component will **not** re-render with the proper theme values unless a render happens to be triggered at the same time for another reason. In other words, using these utils breaks the_ [_pure contract_](https://reactjs.org/docs/components-and-props.html#props-are-read-only) _React expects every Component to have with its props._
+**Why deprecate these?** By using one of these methods in a Component render method, you are declaring that the Component depends on theme data but are not passing that data as props. Therefore, if the theme changes, the Component will **not** re-render with the proper theme values unless a render happens to be triggered at the same time for another reason. In other words, using these utils breaks the [pure contract](https://reactjs.org/docs/components-and-props.html#props-are-read-only) React expects every Component to have with its props.
+{% endhint %}
 
 ### `getThemeColor(vertical*)`
 
