@@ -2,7 +2,7 @@
 description: Welcome to the Bernard Developer Documentation with Gitbook.
 ---
 
-# Bernard Dev Docs
+# Getting Started
 
 Is it good? Let’s find out!
 
