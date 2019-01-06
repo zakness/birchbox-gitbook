@@ -1,9 +1,5 @@
 # Navigation with Route Hooks
 
-[← Routing docs](https://github.com/zakness/birchbox-gitbook/tree/1ad9356b440d8ffd191f6222475ef6f0c15444b0/docs/guides/src/components/Routing/docs/index.md)
-
-## Navigation with Route Hooks
-
 Route hooks are components that make sure the user has access to a view and redirects them somewhere else if they don’t. Let’s look at what happens when route hooks are encountered during a [navigation event](routing-navigation-event.md).
 
 We’ll start with the app from our [basic navigation example](routing-nav-example-basic.md) and add a new constraint: The user must be logged in to see `<ViewB>`. If they aren’t logged in, they will be redirected to `<LoginView>` to log in.

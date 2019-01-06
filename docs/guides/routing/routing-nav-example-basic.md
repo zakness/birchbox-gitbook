@@ -1,9 +1,5 @@
 # Basic Navigation Example
 
-[← Routing docs](https://github.com/zakness/birchbox-gitbook/tree/1ad9356b440d8ffd191f6222475ef6f0c15444b0/docs/guides/src/components/Routing/docs/index.md)
-
-## Basic Navigation Example
-
 To illustrate how routes are configured and how the [navigation event phases](routing-navigation-event.md) update Redux, let’s look at an extremely simple example app that uses our routing components with just two views: `<ViewA>` and `<ViewB>`:
 
 ```jsx

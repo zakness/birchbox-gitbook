@@ -1,9 +1,5 @@
 # \`router\` Redux State
 
-[← Routing docs](./)
-
-## `router` Redux State
-
 ### `router`
 
 The `router` redux state is updated by [navigation event](routing-navigation-event.md) actions.

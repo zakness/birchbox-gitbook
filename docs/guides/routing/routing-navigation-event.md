@@ -1,9 +1,5 @@
 # The Navigation Event
 
-[← Routing docs](./)
-
-## The Navigation Event
-
 When we talk routing, we’re typically talking about one thing: handling a navigation event. A navigation event starts when the location changes and ends when a view mounts. More specifically, a navigation event can be split into three phases:
 
 1. The location changes \(a new pathname, query string, hash, state, or a combination thereof\). This is triggered by the initial app load and by calls to [`history`](../../utils/history.md) methods like `history.push()` \(clicking a link\) or `history.replace()` \(rendering a `<Redirect>`\).

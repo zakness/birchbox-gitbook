@@ -8,6 +8,7 @@ We use a combination of [React Router](https://reacttraining.com/react-router/we
 * [Basic Navigation Example](routing-nav-example-basic.md)
 * [Navigation with Route Hooks](routing-nav-example-routehook.md)
 * [Writing a Route Hook](routing-writing-routehook.md)
+* [`router` Redux state](routing-redux-state.md)
 
 **API**
 
@@ -15,6 +16,5 @@ We use a combination of [React Router](https://reacttraining.com/react-router/we
 * [`history`](../../utils/history.md)
 * [`<PageViewDispatcher>`](../../components/pageviewdispatcher.md)
 * [`<Redirect>`](../../components/redirect.md)
-* [`router` Redux state](routing-redux-state.md)
 * [`<ViewRoute>`](../../components/viewroute.md)
 

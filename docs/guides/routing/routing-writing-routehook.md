@@ -1,9 +1,5 @@
 # Writing a Route Hook
 
-[← Routing docs](./)
-
-## Writing a Route Hook
-
 In this document we’ll be building the [`<ProductViewLoader>`](https://github.com/zakness/birchbox-gitbook/tree/1ad9356b440d8ffd191f6222475ef6f0c15444b0/src/components/RouteHooks/ProductViewLoader.js) route hook from scratch to demonstrate the following concepts:
 
 * Loading the primary view-specific data before the view mounts \(and showing [`<PageNotFound>`](https://github.com/zakness/birchbox-gitbook/tree/1ad9356b440d8ffd191f6222475ef6f0c15444b0/src/components/PageNotFound/index.js) if it fails\)
