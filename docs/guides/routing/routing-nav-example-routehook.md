@@ -1,4 +1,4 @@
-# Routing-nav-example-routehook
+# Navigation with Route Hooks
 
 [← Routing docs](https://github.com/zakness/birchbox-gitbook/tree/1ad9356b440d8ffd191f6222475ef6f0c15444b0/docs/guides/src/components/Routing/docs/index.md)
 

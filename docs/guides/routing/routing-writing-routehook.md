@@ -1,6 +1,6 @@
-# Routing-writing-routehook
+# Writing a Route Hook
 
-[← Routing docs](routing.md)
+[← Routing docs](./)
 
 ## Writing a Route Hook
 
@@ -104,7 +104,7 @@ Here we introduce the `viewRouteUpdate` action which dispatches `VIEW_ROUTE_UPDA
 
 ### Adding `page-view` logging params
 
-Next we have a requirement to attach product-specific data to the `page-view` logging event that fires when the user views the PDP. We do this by passing `logParams` to [`<PageViewDispatcher>`](../components/pageviewdispatcher.md):
+Next we have a requirement to attach product-specific data to the `page-view` logging event that fires when the user views the PDP. We do this by passing `logParams` to [`<PageViewDispatcher>`](../../components/pageviewdispatcher.md):
 
 ```diff
   <ViewRoute path={URLS.product(':id')} pageType='pdp'>

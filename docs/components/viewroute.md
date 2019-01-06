@@ -1,6 +1,6 @@
 # ViewRoute
 
-[← Routing docs](../guides/routing.md)
+[← Routing docs](../guides/routing/)
 
 ## `<ViewRoute>`
 
@@ -22,7 +22,7 @@ When `<ViewRoute>` mounts \(or is re-rendered with a different location\), it wi
 
 `view` **props**
 
-See [`view` object](../guides/routing-redux-state.md#view) in the Routing API docs.
+See [`view` object](../guides/routing/routing-redux-state.md#view) in the Routing API docs.
 
 #### Gotcha: default `view` props
 

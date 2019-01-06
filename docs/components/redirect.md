@@ -1,6 +1,6 @@
 # Redirect
 
-[← Routing docs](../guides/routing.md)
+[← Routing docs](../guides/routing/)
 
 ## `<Redirect>`
 

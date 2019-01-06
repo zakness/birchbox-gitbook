@@ -1,4 +1,4 @@
-# Routing-nav-example-basic
+# Basic Navigation Example
 
 [← Routing docs](https://github.com/zakness/birchbox-gitbook/tree/1ad9356b440d8ffd191f6222475ef6f0c15444b0/docs/guides/src/components/Routing/docs/index.md)
 
@@ -34,7 +34,7 @@ ReactDOM.render(
 )
 ```
 
-> Curious about `ComponentLoader`? Check out [the docs](../enhancers/componentloader.md).
+> Curious about `ComponentLoader`? Check out [the docs](../../enhancers/componentloader.md).
 
 Let’s say the user loads the app initially on `/a`. The initial app load navigation event has a few unique qualities, so let’s skip that for now and assume it’s been processed and the user is looking at `<ViewA>`. In this case the [`router` Redux state](routing-redux-state.md) looks like this:
 
@@ -79,7 +79,7 @@ Note that the root [`location`](routing-redux-state.md#location), [`match`](rout
 
 ### \(2\) View route match
 
-Then, `<Switch>` evaluates the new location and looks for a child [`<ViewRoute>`](../components/viewroute.md) to render. Since `/b` matches the second `<ViewRoute>`, it mounts and dispatches `VIEW_ROUTE_MATCH`. This adds the route-specific data to `next`:
+Then, `<Switch>` evaluates the new location and looks for a child [`<ViewRoute>`](../../components/viewroute.md) to render. Since `/b` matches the second `<ViewRoute>`, it mounts and dispatches `VIEW_ROUTE_MATCH`. This adds the route-specific data to `next`:
 
 ```diff
  {
@@ -100,7 +100,7 @@ Then, `<Switch>` evaluates the new location and looks for a child [`<ViewRoute>`
 
 ### \(3\) View mounts
 
-Finally, `<ViewRoute path='/b'>` renders its child, [`<PageViewDispatcher>`](../components/pageviewdispatcher.md), which dispatches `PAGE_VIEW` and also renders its child, `<ViewB>`. This completes the navigation event, setting `isNavigating` to `false`, moving the current state into [`prev`](routing-redux-state.md#routerprev), moving the `next` into current, and bumping `pageViewCount`:
+Finally, `<ViewRoute path='/b'>` renders its child, [`<PageViewDispatcher>`](../../components/pageviewdispatcher.md), which dispatches `PAGE_VIEW` and also renders its child, `<ViewB>`. This completes the navigation event, setting `isNavigating` to `false`, moving the current state into [`prev`](routing-redux-state.md#routerprev), moving the `next` into current, and bumping `pageViewCount`:
 
 ```diff
  {

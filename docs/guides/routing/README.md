@@ -11,10 +11,10 @@ We use a combination of [React Router](https://reacttraining.com/react-router/we
 
 **API**
 
-* [`getVerticalRoutes`](../utils/getverticalroutes.md)
-* [`history`](../utils/history.md)
-* [`<PageViewDispatcher>`](../components/pageviewdispatcher.md)
-* [`<Redirect>`](../components/redirect.md)
+* [`getVerticalRoutes`](../../utils/getverticalroutes.md)
+* [`history`](../../utils/history.md)
+* [`<PageViewDispatcher>`](../../components/pageviewdispatcher.md)
+* [`<Redirect>`](../../components/redirect.md)
 * [`router` Redux state](routing-redux-state.md)
-* [`<ViewRoute>`](../components/viewroute.md)
+* [`<ViewRoute>`](../../components/viewroute.md)
 

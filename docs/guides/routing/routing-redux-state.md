@@ -1,6 +1,6 @@
-# Routing-redux-state
+# \`router\` Redux State
 
-[← Routing docs](routing.md)
+[← Routing docs](./)
 
 ## `router` Redux State
 
@@ -44,7 +44,7 @@ The React Router [`match`](https://reacttraining.com/react-router/web/api/match)
 
 ### `view`
 
-An object containing view-specific attributes that are set via props on [`<ViewRoute>`](../components/viewroute.md) or by dispatching `VIEW_ROUTE_UPDATE`. Default values are defined as [`ViewRoute.defaultProps`](../components/viewroute.md#gotcha-default-view-props).
+An object containing view-specific attributes that are set via props on [`<ViewRoute>`](../../components/viewroute.md) or by dispatching `VIEW_ROUTE_UPDATE`. Default values are defined as [`ViewRoute.defaultProps`](../../components/viewroute.md#gotcha-default-view-props).
 
 | Key | Type | Description | Default |
 | :--- | :--- | :--- | :--- |
@@ -65,8 +65,8 @@ The next `router` state while in a [navigation event](routing-navigation-event.m
 | :--- | :--- | :--- |
 | changed | [changed object](routing-redux-state.md#routernextchanged) | Key/value pairs describing what part of the location has changed. |
 | location | [location object](routing-redux-state.md#location) | The next location. |
-| match | [match object](routing-redux-state.md#match) | The next match or `undefined` if a [`<ViewRoute>`](../components/viewroute.md) has not matched yet. |
-| view | [view object](routing-redux-state.md#view) | The next view props or `undefined` if a [`<ViewRoute>`](../components/viewroute.md) has not matched yet. |
+| match | [match object](routing-redux-state.md#match) | The next match or `undefined` if a [`<ViewRoute>`](../../components/viewroute.md) has not matched yet. |
+| view | [view object](routing-redux-state.md#view) | The next view props or `undefined` if a [`<ViewRoute>`](../../components/viewroute.md) has not matched yet. |
 
 ### `router.next.changed`
 

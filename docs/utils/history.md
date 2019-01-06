@@ -1,6 +1,6 @@
 # history
 
-[← Routing docs](../guides/routing.md)
+[← Routing docs](../guides/routing/)
 
 ## `history`
 
