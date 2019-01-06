@@ -1,0 +1,57 @@
+# Address
+
+[`Address`](https://github.com/zakness/birchbox-gitbook/tree/1ad9356b440d8ffd191f6222475ef6f0c15444b0/src/components/Addresses/Address/index.js) is a component for displaying an address with standard formatting.
+
+Not sure this is the right component for your use case? See [other address-related components](../guides/addresses.md).
+
+## Props
+
+| Prop | Type | Description | Default |
+| :--- | :--- | :--- | :--- |
+| address | address object | The address object. |  |
+| className | string | Passed through to container div. |  |
+| maxLines | number | Limit the number of lines the address is rendered with. See examples below. |  |
+
+## Address shape
+
+```text
+{
+  city: 'New York',
+  company: 'Birchbox',
+  country: 'US',
+  firstName: 'Zach',
+  lastName: 'Lindner',
+  postCode: '10017',
+  state: 'New York',
+  streetAddress1: '115 Lexington Ave',
+  streetAddress2: 'Apt 3',
+  telephone: '999999999',
+}
+```
+
+## `maxLines` examples
+
+`maxLines: 1`
+
+```text
+firstName lastName, company, streetAddress1 streetAddress2, city, state postCode, country, Tel. 999999999
+```
+
+`maxLines: 2`
+
+```text
+firstName lastName, company, streetAddress1 streetAddress2
+city, state postCode, country, Tel. 999999999
+```
+
+`maxLines: default (undefined)`
+
+```text
+firstName lastName
+company
+streetAddress1 streetAddress2
+city, state postCode
+country
+Tel. 999999999
+```
+

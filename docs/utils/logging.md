@@ -1,10 +1,10 @@
-# Logging
+# logging
 
 ## Logging Events
 
 Event data should be logged via the utility function `log`. This function takes a JSON object which contains all relevant data to be passed to external tracking.
 
-```es6
+```text
 import { log } from 'utils/logging'
 
 log({
@@ -17,7 +17,7 @@ log({
 
 NB: All `Link` and `Clickable` interactions are already logged, as well as all page views. You should only need to use `log` to add custom events, e.g.
 
-```es6
+```text
 log({
   context: 'session',
   event: 'register-experiment',
@@ -27,6 +27,7 @@ log({
   version,
 })
 ```
+
 ## Logging Event Properties
 
 ### event
@@ -39,7 +40,7 @@ The `context` property can be passed in as part of the event data payload. If it
 
 ### path
 
-The `path` property (equivalent to `window.location.pathname`) is automatically added to all event.api events.
+The `path` property \(equivalent to `window.location.pathname`\) is automatically added to all event.api events.
 
 ### vertical
 
@@ -51,19 +52,19 @@ Console log messages can be enabled via localStorage flags.
 
 Log tracking event data:
 
-```es6
+```text
 localStorage.setItem('debugTracking', true)
 ```
 
 Log event.api payload data:
 
-```es6
+```text
 localStorage.setItem('debugEventApi', true)
 ```
 
 Log tag manager data:
 
-```es6
+```text
 localStorage.setItem('debugTagManager', true)
 ```
 
@@ -71,10 +72,11 @@ localStorage.setItem('debugTagManager', true)
 
 When running experiments, we must make a logging call that registers a given session for the specific experiment variant assigned to the user. Use the `logExperiment` utility method to make this call:
 
-```es6
+```text
 import { logExperiment } from 'utils/logging'
 
 logExperiment('experiment-name', 'variant-name')
 ```
 
-This call is memoized on its arguments so the same registration call is not made more than once per session (it would be okay to do so, it’s just unnecessary).
+This call is memoized on its arguments so the same registration call is not made more than once per session \(it would be okay to do so, it’s just unnecessary\).
+

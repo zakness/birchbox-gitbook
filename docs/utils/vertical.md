@@ -1,4 +1,4 @@
-# UI Vertical
+# vertical
 
 The **UI vertical** is a value that determines whether certain views, components, and data are tailored to the women’s or men’s experience.
 
@@ -6,9 +6,9 @@ The **UI vertical** is a value that determines whether certain views, components
 
 The vertical value is stored in Redux.
 
-If you’re inside a [navigation event](src/components/Routing/docs/guides/navigation-event.md), you should get the vertical from `router.next.view` and fall back to `ui.vertical` in case the route is unisex. This is typically only done in route hook code:
+If you’re inside a [navigation event](https://github.com/zakness/birchbox-gitbook/tree/1ad9356b440d8ffd191f6222475ef6f0c15444b0/docs/utils/src/components/Routing/docs/guides/navigation-event.md), you should get the vertical from `router.next.view` and fall back to `ui.vertical` in case the route is unisex. This is typically only done in route hook code:
 
-```es6
+```text
 MyRouteHook.mapStateToProps = ({ router, ui }) => ({
   vertical: _.get(router, 'next.view.vertical', ui.vertical),
 })
@@ -16,13 +16,13 @@ MyRouteHook.mapStateToProps = ({ router, ui }) => ({
 
 All other times, the source of truth for the current vertical is `ui.vertical`:
 
-```es6
+```text
 MyView.mapStateToProps = ({ ui }) => ({
   vertical: ui.vertical
 })
 ```
 
-Every time the value changes it is saved to localStorage. This is then used to hydrate the initial store state in the user’s next session (in case they land on a unisex view).
+Every time the value changes it is saved to localStorage. This is then used to hydrate the initial store state in the user’s next session \(in case they land on a unisex view\).
 
 ## Setting UI vertical
 
@@ -32,9 +32,9 @@ Sometimes we know a view is vertical-specific based on the route path, other tim
 
 ### Route vertical
 
-If a view’s vertical is known a priori, you can specify `vertical` as a prop on the [`ViewRoute`](src/components/Routing/ViewRoute.js) component and it will automatically update Redux via the `PAGE_VIEW` dispatch:
+If a view’s vertical is known a priori, you can specify `vertical` as a prop on the [`ViewRoute`](https://github.com/zakness/birchbox-gitbook/tree/1ad9356b440d8ffd191f6222475ef6f0c15444b0/docs/utils/src/components/Routing/ViewRoute.js) component and it will automatically update Redux via the `PAGE_VIEW` dispatch:
 
-```es6
+```text
 <ViewRoute path='/magazine' vertical='women'>
   ...
 </ViewRoute>
@@ -44,4 +44,5 @@ If a view’s vertical is known a priori, you can specify `vertical` as a prop o
 
 If a view is vertical-specific but you don’t know the vertical until data is fetched, load the data once the route matches and then call the `viewRouteUpdate` action before the `PAGE_VIEW` action is dispatched.
 
-See [`ProductViewLoader`](src/components/RouteHooks/ProductViewLoader.js) for an example.
+See [`ProductViewLoader`](https://github.com/zakness/birchbox-gitbook/tree/1ad9356b440d8ffd191f6222475ef6f0c15444b0/docs/utils/src/components/RouteHooks/ProductViewLoader.js) for an example.
+
