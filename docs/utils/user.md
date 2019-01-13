@@ -18,7 +18,7 @@ The best practice inside components is to wait to display anything until we know
 
 If you’re only depending on user data, `MaskContainer` might be all you need:
 
-```text
+```jsx
 const MyComponent = (props) =>
   <MaskContainer status={props.userStatus}>
     {props.isLoggedIn && `Welcome back, ${props.firstName}!`}
