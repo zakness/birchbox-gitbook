@@ -6,7 +6,7 @@ description: Welcome to the Bernard Developer Documentation with Gitbook.
 
 ## Development Environment Setup
 
-Hey Curt
+Making a change
 
 {% tabs %}
 {% tab title="Local Setup" %}
